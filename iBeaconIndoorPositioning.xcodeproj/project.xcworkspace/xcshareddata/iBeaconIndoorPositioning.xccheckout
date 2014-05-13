@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D9E6E91F-7035-40CA-BF33-96E0560B6145</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iBeaconIndoorPositioning</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>509CCD39-D67D-41C4-B09B-E044227C5096</key>
+		<string>ssh://github.com/AndreMuis/iBeaconIndoorPositioning.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iBeaconIndoorPositioning/iBeaconIndoorPositioning.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>509CCD39-D67D-41C4-B09B-E044227C5096</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/AndreMuis/iBeaconIndoorPositioning.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>509CCD39-D67D-41C4-B09B-E044227C5096</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>509CCD39-D67D-41C4-B09B-E044227C5096</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iBeaconIndoorPositioning</string>
+		</dict>
+	</array>
+</dict>
+</plist>
