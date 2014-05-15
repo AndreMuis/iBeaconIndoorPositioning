@@ -46,14 +46,14 @@
     NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString: proximityUUIDAsString];
     
     CLBeaconRegion *beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID: proximityUUID
-                                                                      identifier: @""];
+                                                                      identifier: @"com.andremuis.beaconregion"];
         
     [self.locationManager startRangingBeaconsInRegion: beaconRegion];
 }
 
-- (void)locationManager: (CLLocationManager *)manager
+- (void)locationManager: (CLLocationManager *)locationManager
         didRangeBeacons: (NSArray *)beacons
-               inRegion: (CLBeaconRegion *)region
+               inRegion: (CLBeaconRegion *)beaconRegion
 {
     if (beacons.count >= 1)
     {
@@ -68,8 +68,8 @@
     }
 }
 
-- (void)         locationManager: (CLLocationManager *)manager
-  rangingBeaconsDidFailForRegion: (CLBeaconRegion *)region
+- (void)         locationManager: (CLLocationManager *)locationManager
+  rangingBeaconsDidFailForRegion: (CLBeaconRegion *)beaconRegion
                        withError: (NSError *)error
 {
     [self.delegate beaconManager: self didEncounterError: error];

@@ -14,6 +14,10 @@
 
 @interface IPViewController () <IPBeaconManagerDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *majorLabel;
+@property (weak, nonatomic) IBOutlet UILabel *minorLabel;
+@property (weak, nonatomic) IBOutlet UITextView *errorMessageTextView;
+
 @property (readonly, strong, nonatomic) IPBeaconManager *beaconManager;
 
 @end
@@ -32,6 +36,15 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.majorLabel.backgroundColor = [UIColor clearColor];
+    self.minorLabel.backgroundColor = [UIColor clearColor];
+    self.errorMessageTextView.backgroundColor = [UIColor colorWithWhite: 0.85 alpha: 1.0];
+}
+
 - (void)viewDidAppear: (BOOL)animated
 {
     [super viewDidAppear: animated];
@@ -41,10 +54,13 @@
 
 - (void)beaconManager: (IPBeaconManager *)beaconManager didUpdateClosestBeacon: (CLBeacon *)closestBeacon
 {
+    self.majorLabel.text = [NSString stringWithFormat: @"%d", [closestBeacon.major integerValue]];
+    self.minorLabel.text = [NSString stringWithFormat: @"%d", [closestBeacon.minor integerValue]];
 }
 
 - (void)beaconManager: (IPBeaconManager *)beaconManager didEncounterError: (NSError *)error
 {
+    self.errorMessageTextView.text = [NSString stringWithFormat: @"%@", error];
 }
 
 @end
