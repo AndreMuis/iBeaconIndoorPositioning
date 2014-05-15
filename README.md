@@ -1,4 +1,4 @@
 iBeaconIndoorPositioning
 ========================
 
-Reports the closest iBeacon with a particular proximityUUID.
+Ranges iBeacons with a particular proximityUUID and reports the cloest one.
